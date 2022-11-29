@@ -8,7 +8,7 @@ import {
   Image,
   TouchableOpacity
 } from 'react-native';
-import {ViewPropTypes} from 'deprecated-react-native-prop-types'
+import {ViewPropTypes,TextPropTypes,TextInputPropTypes} from 'deprecated-react-native-prop-types'
 
 class Tags extends React.Component {
 
@@ -235,11 +235,11 @@ Tags.propTypes = {
   keysForTagsArray: PropTypes.arrayOf(PropTypes.string),
   containerStyle: ViewPropTypes.style,
   inputContainerStyle: ViewPropTypes.style,
-  inputStyle: TextInput.propTypes.style,
+  inputStyle: TextInputPropTypes.style,
   disabledInputStyle: ViewPropTypes.style,
   leftElementContainerStyle: ViewPropTypes.style,
   rightElementContainerStyle: ViewPropTypes.style,
-  labelStyle: Text.propTypes.style,
+  labelStyle: TextPropTypes.style,
   deleteIconStyles: ViewPropTypes.style,
 };
 
